@@ -1,0 +1,469 @@
+{
+  "pages": [
+    {
+      "id": "admin-login",
+      "name": "Admin Login",
+      "module": "admin",
+      "path": "/admin/login",
+      "components": [
+        "Logo",
+        "EmailInput",
+        "PasswordInput",
+        "RememberMeCheckbox",
+        "LoginButton",
+        "ForgotPasswordLink"
+      ],
+      "description": "Admin panel login page",
+      "layout": "centered",
+      "responsive": {
+        "mobile": true,
+        "tablet": true,
+        "desktop": true
+      }
+    },
+    {
+      "id": "admin-dashboard",
+      "name": "Admin Dashboard",
+      "module": "admin",
+      "path": "/admin/dashboard",
+      "components": [
+        "Header",
+        "Sidebar",
+        "StatCard",
+        "RecentActivityCard",
+        "QuickActionButton",
+        "Chart"
+      ],
+      "description": "Main admin dashboard with overview",
+      "layout": "sidebar",
+      "requiresAuth": true,
+      "responsive": {
+        "mobile": true,
+        "tablet": true,
+        "desktop": true
+      }
+    },
+    {
+      "id": "admin-blog-manager",
+      "name": "Blog Manager",
+      "module": "admin",
+      "path": "/admin/blog",
+      "components": [
+        "Header",
+        "Sidebar",
+        "SearchBar",
+        "FilterDropdown",
+        "BlogPostTable",
+        "EditButton",
+        "DeleteButton",
+        "CreateNewButton",
+        "Pagination"
+      ],
+      "description": "Manage blog posts and news articles",
+      "layout": "sidebar",
+      "requiresAuth": true,
+      "responsive": {
+        "mobile": false,
+        "tablet": true,
+        "desktop": true
+      }
+    },
+    {
+      "id": "admin-blog-editor",
+      "name": "Blog Editor",
+      "module": "admin",
+      "path": "/admin/blog/[id]/edit",
+      "components": [
+        "Header",
+        "Sidebar",
+        "TitleInput",
+        "RichTextEditor",
+        "FeaturedImageUpload",
+        "TagInput",
+        "CategorySelect",
+        "PublishButton",
+        "SaveDraftButton",
+        "PreviewButton"
+      ],
+      "description": "Edit/create blog posts with rich text editor",
+      "layout": "sidebar",
+      "requiresAuth": true,
+      "responsive": {
+        "mobile": false,
+        "tablet": true,
+        "desktop": true
+      }
+    },
+    {
+      "id": "admin-media-manager",
+      "name": "Media Manager",
+      "module": "admin",
+      "path": "/admin/media",
+      "components": [
+        "Header",
+        "Sidebar",
+        "UploadArea",
+        "MediaGrid",
+        "MediaCard",
+        "FilterBar",
+        "DeleteButton",
+        "SearchBar"
+      ],
+      "description": "Manage images, videos, and media files",
+      "layout": "sidebar",
+      "requiresAuth": true,
+      "responsive": {
+        "mobile": false,
+        "tablet": true,
+        "desktop": true
+      }
+    },
+    {
+      "id": "admin-social-publisher",
+      "name": "Social Media Publisher",
+      "module": "admin",
+      "path": "/admin/social",
+      "components": [
+        "Header",
+        "Sidebar",
+        "ComposerTextarea",
+        "MediaUpload",
+        "PlatformToggle",
+        "ScheduleDatePicker",
+        "PublishButton",
+        "ScheduleButton",
+        "PreviewPanel"
+      ],
+      "description": "Publish content to social media platforms",
+      "layout": "sidebar",
+      "requiresAuth": true,
+      "responsive": {
+        "mobile": false,
+        "tablet": true,
+        "desktop": true
+      }
+    },
+    {
+      "id": "admin-analytics",
+      "name": "Analytics View",
+      "module": "admin",
+      "path": "/admin/analytics",
+      "components": [
+        "Header",
+        "Sidebar",
+        "DateRangePicker",
+        "MetricCard",
+        "LineChart",
+        "BarChart",
+        "PieChart",
+        "ExportButton"
+      ],
+      "description": "Analytics dashboard with performance metrics",
+      "layout": "sidebar",
+      "requiresAuth": true,
+      "responsive": {
+        "mobile": false,
+        "tablet": true,
+        "desktop": true
+      }
+    },
+    {
+      "id": "blog-homepage",
+      "name": "Blog Homepage",
+      "module": "blog",
+      "path": "/",
+      "components": [
+        "Header",
+        "Navigation",
+        "HeroSection",
+        "FeaturedPostCard",
+        "PostGrid",
+        "SearchBar",
+        "Footer",
+        "CategoryMenu"
+      ],
+      "description": "Blog homepage with featured posts and news",
+      "layout": "full",
+      "requiresAuth": false,
+      "responsive": {
+        "mobile": true,
+        "tablet": true,
+        "desktop": true
+      }
+    },
+    {
+      "id": "blog-news-list",
+      "name": "News List",
+      "module": "blog",
+      "path": "/haberler",
+      "components": [
+        "Header",
+        "Navigation",
+        "BreadcrumbNav",
+        "FilterSidebar",
+        "NewsListItem",
+        "Pagination",
+        "Footer"
+      ],
+      "description": "List of all news and blog articles with filtering",
+      "layout": "sidebar",
+      "requiresAuth": false,
+      "responsive": {
+        "mobile": true,
+        "tablet": true,
+        "desktop": true
+      }
+    },
+    {
+      "id": "blog-news-detail",
+      "name": "News Detail",
+      "module": "blog",
+      "path": "/haberler/[slug]",
+      "components": [
+        "Header",
+        "Navigation",
+        "BreadcrumbNav",
+        "ArticleHeader",
+        "FeaturedImage",
+        "ArticleContent",
+        "AuthorCard",
+        "RelatedPosts",
+        "Footer",
+        "ShareButtons"
+      ],
+      "description": "Individual news article page",
+      "layout": "full",
+      "requiresAuth": false,
+      "responsive": {
+        "mobile": true,
+        "tablet": true,
+        "desktop": true
+      }
+    },
+    {
+      "id": "blog-gallery",
+      "name": "Gallery",
+      "module": "blog",
+      "path": "/galeri",
+      "components": [
+        "Header",
+        "Navigation",
+        "BreadcrumbNav",
+        "GalleryGrid",
+        "ImageCard",
+        "LightboxModal",
+        "FilterBar",
+        "Footer"
+      ],
+      "description": "Photo gallery with lightbox view",
+      "layout": "full",
+      "requiresAuth": false,
+      "responsive": {
+        "mobile": true,
+        "tablet": true,
+        "desktop": true
+      }
+    },
+    {
+      "id": "parent-login",
+      "name": "Parent Portal Login",
+      "module": "parent",
+      "path": "/parent/login",
+      "components": [
+        "Logo",
+        "EmailInput",
+        "PasswordInput",
+        "TwoFactorInput",
+        "LoginButton",
+        "ForgotPasswordLink"
+      ],
+      "description": "Parent portal login with 2FA",
+      "layout": "centered",
+      "requiresAuth": false,
+      "responsive": {
+        "mobile": true,
+        "tablet": true,
+        "desktop": true
+      }
+    },
+    {
+      "id": "parent-dashboard",
+      "name": "Parent Dashboard",
+      "module": "parent",
+      "path": "/parent/dashboard",
+      "components": [
+        "Header",
+        "Sidebar",
+        "StudentSelector",
+        "GradesSummary",
+        "AttendanceSummary",
+        "UpcomingEvents",
+        "NotificationsBell",
+        "Footer"
+      ],
+      "description": "Parent dashboard overview",
+      "layout": "sidebar",
+      "requiresAuth": true,
+      "responsive": {
+        "mobile": true,
+        "tablet": true,
+        "desktop": true
+      }
+    },
+    {
+      "id": "parent-student-selector",
+      "name": "Student Selector",
+      "module": "parent",
+      "path": "/parent/students",
+      "components": [
+        "Header",
+        "Sidebar",
+        "StudentCard",
+        "SelectButton",
+        "Footer"
+      ],
+      "description": "Select which student to view",
+      "layout": "sidebar",
+      "requiresAuth": true,
+      "responsive": {
+        "mobile": true,
+        "tablet": true,
+        "desktop": true
+      }
+    },
+    {
+      "id": "parent-grades",
+      "name": "Student Grades",
+      "module": "parent",
+      "path": "/parent/grades",
+      "components": [
+        "Header",
+        "Sidebar",
+        "StudentInfo",
+        "GradeTable",
+        "GradeStatistics",
+        "SubjectBreakdown",
+        "Footer"
+      ],
+      "description": "View student grades and performance",
+      "layout": "sidebar",
+      "requiresAuth": true,
+      "responsive": {
+        "mobile": true,
+        "tablet": true,
+        "desktop": true
+      }
+    },
+    {
+      "id": "parent-attendance",
+      "name": "Attendance Calendar",
+      "module": "parent",
+      "path": "/parent/attendance",
+      "components": [
+        "Header",
+        "Sidebar",
+        "StudentInfo",
+        "Calendar",
+        "AttendanceStats",
+        "AbsenceDetails",
+        "Footer"
+      ],
+      "description": "View student attendance and absences",
+      "layout": "sidebar",
+      "requiresAuth": true,
+      "responsive": {
+        "mobile": true,
+        "tablet": true,
+        "desktop": true
+      }
+    },
+    {
+      "id": "parent-calendar",
+      "name": "Academic Calendar",
+      "module": "parent",
+      "path": "/parent/calendar",
+      "components": [
+        "Header",
+        "Sidebar",
+        "Calendar",
+        "EventList",
+        "EventDetail",
+        "FilterByType",
+        "Footer"
+      ],
+      "description": "Academic calendar with events and holidays",
+      "layout": "sidebar",
+      "requiresAuth": true,
+      "responsive": {
+        "mobile": true,
+        "tablet": true,
+        "desktop": true
+      }
+    },
+    {
+      "id": "parent-notifications",
+      "name": "Notifications",
+      "module": "parent",
+      "path": "/parent/notifications",
+      "components": [
+        "Header",
+        "Sidebar",
+        "NotificationList",
+        "NotificationItem",
+        "MarkAsReadButton",
+        "DeleteButton",
+        "FilterBar",
+        "Footer"
+      ],
+      "description": "Notifications from school",
+      "layout": "sidebar",
+      "requiresAuth": true,
+      "responsive": {
+        "mobile": true,
+        "tablet": true,
+        "desktop": true
+      }
+    },
+    {
+      "id": "parent-messaging",
+      "name": "Parent Messaging",
+      "module": "parent",
+      "path": "/parent/messages",
+      "components": [
+        "Header",
+        "Sidebar",
+        "ConversationList",
+        "ChatPanel",
+        "MessageInput",
+        "SendButton",
+        "AttachmentUpload",
+        "Footer"
+      ],
+      "description": "Messaging system for parent-teacher communication",
+      "layout": "sidebar",
+      "requiresAuth": true,
+      "responsive": {
+        "mobile": true,
+        "tablet": true,
+        "desktop": true
+      }
+    }
+  ],
+  "modules": {
+    "admin": {
+      "description": "Administrator panel for content management",
+      "requiresAuth": true,
+      "roles": ["admin"]
+    },
+    "blog": {
+      "description": "Public blog and news website",
+      "requiresAuth": false,
+      "roles": ["public"]
+    },
+    "parent": {
+      "description": "Parent portal for viewing student info",
+      "requiresAuth": true,
+      "roles": ["parent", "guardian"]
+    }
+  }
+}

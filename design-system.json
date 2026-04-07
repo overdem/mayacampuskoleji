@@ -1,0 +1,207 @@
+{
+  "name": "Campus Maya Design System",
+  "version": "1.0.0",
+  "metadata": {
+    "description": "Brand colors, typography, spacing, and component guidelines",
+    "lastUpdated": "2026-04-07"
+  },
+  "colors": {
+    "primary": {
+      "50": "#EFF6FF",
+      "100": "#DBEAFE",
+      "200": "#BFDBFE",
+      "300": "#93C5FD",
+      "400": "#60A5FA",
+      "500": "#3B82F6",
+      "600": "#2563EB",
+      "700": "#1D4ED8",
+      "800": "#1E40AF",
+      "900": "#1E3A8A"
+    },
+    "secondary": {
+      "50": "#F0FDF4",
+      "100": "#DCFCE7",
+      "200": "#BBFBBB",
+      "300": "#86EFAC",
+      "400": "#4ADE80",
+      "500": "#22C55E",
+      "600": "#16A34A",
+      "700": "#15803D",
+      "800": "#166534",
+      "900": "#14532D"
+    },
+    "accent": {
+      "50": "#FEF3C7",
+      "100": "#FDE68A",
+      "200": "#FCD34D",
+      "300": "#FBBF24",
+      "400": "#F59E0B",
+      "500": "#F97316",
+      "600": "#EA580C",
+      "700": "#C2410C",
+      "800": "#92400E",
+      "900": "#78350F"
+    },
+    "gray": {
+      "50": "#F9FAFB",
+      "100": "#F3F4F6",
+      "200": "#E5E7EB",
+      "300": "#D1D5DB",
+      "400": "#9CA3AF",
+      "500": "#6B7280",
+      "600": "#4B5563",
+      "700": "#374151",
+      "800": "#1F2937",
+      "900": "#111827"
+    },
+    "status": {
+      "success": "#059669",
+      "error": "#DC2626",
+      "warning": "#F59E0B",
+      "info": "#0EA5E9"
+    }
+  },
+  "typography": {
+    "fontFamily": {
+      "heading": "Poppins, sans-serif",
+      "body": "Inter, sans-serif",
+      "mono": "'Courier New', monospace"
+    },
+    "fontSize": {
+      "xs": "12px",
+      "sm": "14px",
+      "base": "16px",
+      "lg": "18px",
+      "xl": "20px",
+      "2xl": "24px",
+      "3xl": "30px",
+      "4xl": "36px"
+    },
+    "fontWeight": {
+      "light": 300,
+      "normal": 400,
+      "medium": 500,
+      "semibold": 600,
+      "bold": 700,
+      "extrabold": 800
+    },
+    "lineHeight": {
+      "tight": 1.2,
+      "normal": 1.5,
+      "relaxed": 1.75,
+      "loose": 2
+    },
+    "headings": {
+      "h1": {
+        "fontSize": "36px",
+        "fontWeight": 700,
+        "lineHeight": 1.2,
+        "fontFamily": "Poppins"
+      },
+      "h2": {
+        "fontSize": "30px",
+        "fontWeight": 700,
+        "lineHeight": 1.2,
+        "fontFamily": "Poppins"
+      },
+      "h3": {
+        "fontSize": "24px",
+        "fontWeight": 700,
+        "lineHeight": 1.3,
+        "fontFamily": "Poppins"
+      },
+      "h4": {
+        "fontSize": "20px",
+        "fontWeight": 600,
+        "lineHeight": 1.4,
+        "fontFamily": "Poppins"
+      },
+      "body": {
+        "fontSize": "14px",
+        "fontWeight": 400,
+        "lineHeight": 1.5,
+        "fontFamily": "Inter"
+      },
+      "small": {
+        "fontSize": "12px",
+        "fontWeight": 400,
+        "lineHeight": 1.5,
+        "fontFamily": "Inter"
+      }
+    }
+  },
+  "spacing": {
+    "0": "0px",
+    "1": "4px",
+    "2": "8px",
+    "3": "12px",
+    "4": "16px",
+    "5": "20px",
+    "6": "24px",
+    "8": "32px",
+    "10": "40px",
+    "12": "48px",
+    "16": "64px",
+    "20": "80px",
+    "24": "96px"
+  },
+  "borderRadius": {
+    "none": "0px",
+    "sm": "4px",
+    "base": "8px",
+    "md": "12px",
+    "lg": "16px",
+    "xl": "20px",
+    "2xl": "24px",
+    "full": "9999px"
+  },
+  "shadows": {
+    "sm": "0 1px 2px 0 rgba(0, 0, 0, 0.05)",
+    "base": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
+    "md": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
+    "lg": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
+    "xl": "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
+    "2xl": "0 25px 50px -12px rgba(0, 0, 0, 0.25)"
+  },
+  "transitions": {
+    "fast": "150ms ease-in-out",
+    "base": "200ms ease-in-out",
+    "slow": "300ms ease-in-out"
+  },
+  "breakpoints": {
+    "mobile": "320px",
+    "sm": "640px",
+    "md": "768px",
+    "lg": "1024px",
+    "xl": "1280px",
+    "2xl": "1536px"
+  },
+  "components": {
+    "button": {
+      "variants": ["primary", "secondary", "danger", "ghost"],
+      "sizes": ["sm", "md", "lg"],
+      "states": ["default", "hover", "active", "disabled"]
+    },
+    "input": {
+      "types": ["text", "email", "password", "number", "date"],
+      "sizes": ["sm", "md", "lg"],
+      "states": ["default", "focus", "error", "disabled"]
+    },
+    "card": {
+      "variants": ["default", "elevated", "outlined"],
+      "borderRadius": "12px"
+    },
+    "modal": {
+      "backdrop": "rgba(0, 0, 0, 0.5)",
+      "borderRadius": "12px"
+    },
+    "badge": {
+      "variants": ["default", "success", "error", "warning", "info"],
+      "sizes": ["sm", "md"]
+    },
+    "pagination": {
+      "itemSize": "40px",
+      "activeColor": "#1E40AF"
+    }
+  }
+}
