@@ -1,27 +1,18 @@
 import type { Metadata } from 'next'
-import { Inter, Poppins, Plus_Jakarta_Sans, Work_Sans } from 'next/font/google'
+import { Inter, Poppins } from 'next/font/google'
 import './globals.css'
 
-const inter = Inter({
-  subsets: ['latin'],
-  variable: '--font-inter',
-})
-
-const poppins = Poppins({
+// Poppins for headlines (Design.md specification)
+const poppinsFont = Poppins({
   subsets: ['latin'],
   weight: ['400', '500', '600', '700'],
-  variable: '--font-poppins',
-})
-
-const plusJakartaSans = Plus_Jakarta_Sans({
-  subsets: ['latin'],
-  weight: ['400', '500', '600', '700', '800'],
   variable: '--font-headline',
 })
 
-const workSans = Work_Sans({
+// Inter for body text (Design.md specification)
+const interFont = Inter({
   subsets: ['latin'],
-  weight: ['300', '400', '500', '600'],
+  weight: ['400', '500', '600', '700'],
   variable: '--font-body',
 })
 
@@ -39,7 +30,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="tr">
-      <body className={`${inter.variable} ${poppins.variable} ${plusJakartaSans.variable} ${workSans.variable} font-body bg-background text-on-surface`}>
+      <body className={`${poppinsFont.variable} ${interFont.variable} font-body bg-gray-50 text-gray-900`}>
         {children}
       </body>
     </html>
