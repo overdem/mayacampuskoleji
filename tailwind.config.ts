@@ -67,11 +67,9 @@ const config: Config = {
         'bg-lighter': '#F3F4F6',
       },
       fontFamily: {
-        headline: 'var(--font-headline)',
-        label: 'var(--font-headline)',
-        body: 'var(--font-body)',
-        heading: ['Poppins', 'sans-serif'],
-        body: ['Inter', 'sans-serif'],
+        headline: ['var(--font-headline)', 'Poppins', 'sans-serif'],
+        label: ['var(--font-headline)', 'Poppins', 'sans-serif'],
+        body: ['var(--font-body)', 'Inter', 'sans-serif'],
         mono: ['"Courier New"', 'monospace'],
       },
       fontSize: {

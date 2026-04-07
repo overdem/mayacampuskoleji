@@ -1,9 +1,11 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-/* Root Variables */
+/* Root Variables - Google Fonts */
 :root {
-  --font-inter: 'Inter', system-ui, -apple-system, sans-serif;
-  --font-poppins: 'Poppins', system-ui, -apple-system, sans-serif;
+  --font-headline: 'Poppins', system-ui, -apple-system, sans-serif;
+  --font-body: 'Inter', system-ui, -apple-system, sans-serif;
 }
 
 /* Smooth scrolling */
