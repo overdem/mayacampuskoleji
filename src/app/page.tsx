@@ -1,21 +1,19 @@
-import { TopNavBar } from '@/components/sections/TopNavBar'
-import { HomeHeroSection } from '@/components/sections/HomeHeroSection'
-import { HomeMissionVisionSection } from '@/components/sections/HomeMissionVisionSection'
-import { HomeCoreValuesSection } from '@/components/sections/HomeCoreValuesSection'
-import { HomeTeamSection } from '@/components/sections/HomeTeamSection'
-import { HomeCTASection } from '@/components/sections/HomeCTASection'
-import { Footer } from '@/components/sections/Footer'
+import { Navbar } from '@/components/Navbar'
+import { Hero } from '@/components/Hero'
+import { About } from '@/components/About'
+import { Values } from '@/components/Values'
+import { Team } from '@/components/Team'
+import { Footer } from '@/components/Footer'
 
 export default function Home() {
   return (
     <>
-      <TopNavBar />
-      <main className="bg-white text-gray-900">
-        <HomeHeroSection />
-        <HomeMissionVisionSection />
-        <HomeCoreValuesSection />
-        <HomeTeamSection />
-        <HomeCTASection />
+      <Navbar />
+      <main>
+        <Hero />
+        <About />
+        <Values />
+        <Team />
       </main>
       <Footer />
     </>
