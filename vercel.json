@@ -3,13 +3,6 @@
   "devCommand": "npm run dev",
   "installCommand": "npm install",
   "framework": "nextjs",
-  "nodeVersion": "20.x",
-  "env": [
-    {
-      "key": "NEXT_PUBLIC_API_URL",
-      "value": "https://campus-maya.vercel.app"
-    }
-  ],
   "redirects": [
     {
       "source": "/admin",
