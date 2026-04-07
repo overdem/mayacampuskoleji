@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 /* Root Variables */
 :root {
@@ -21,7 +19,7 @@ body {
 
 /* Base styles */
 * {
-  @apply box-border;
+  box-sizing: border-box;
 }
 
 /* Typography */
@@ -31,41 +29,91 @@ h3,
 h4,
 h5,
 h6 {
-  @apply font-heading font-bold text-gray-900;
+  font-weight: 700;
+  color: rgb(17, 24, 39);
+  font-family: var(--font-poppins);
 }
 
 h1 {
-  @apply text-4xl md:text-5xl lg:text-6xl;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 3rem;
+    line-height: 1;
+  }
+}
+
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
 }
 
 h2 {
-  @apply text-3xl md:text-4xl;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+@media (min-width: 768px) {
+  h2 {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
 }
 
 h3 {
-  @apply text-2xl md:text-3xl;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+@media (min-width: 768px) {
+  h3 {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
 }
 
 h4 {
-  @apply text-xl md:text-2xl;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+@media (min-width: 768px) {
+  h4 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
 }
 
 /* Links */
 a {
-  @apply text-primary-600 hover:text-primary-700 transition-colors;
+  color: rgb(37, 99, 235);
+  transition-property: color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+a:hover {
+  color: rgb(29, 78, 216);
 }
 
 /* Forms */
 input,
 textarea,
 select {
-  @apply font-body;
+  font-family: var(--font-inter);
 }
 
 input:focus,
 textarea:focus,
 select:focus {
-  @apply outline-none ring-2 ring-primary-500 ring-offset-2;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 2px white, 0 0 0 4px rgb(59, 130, 246);
 }
 
 /* Animations */
