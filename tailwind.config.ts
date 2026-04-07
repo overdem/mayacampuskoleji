@@ -7,6 +7,24 @@ const config: Config = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    container: {
+      center: true,
+      padding: {
+        DEFAULT: '16px',
+        sm: '16px',
+        md: '32px',
+        lg: '32px',
+        xl: '32px',
+      },
+      maxWidth: {
+        DEFAULT: '100%',
+        sm: '640px',
+        md: '768px',
+        lg: '1024px',
+        xl: '1280px',
+        '2xl': '1280px',
+      },
+    },
     extend: {
       colors: {
         // Campus Maya - Design System v1

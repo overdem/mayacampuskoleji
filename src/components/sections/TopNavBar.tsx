@@ -17,7 +17,7 @@ export function TopNavBar() {
 
   return (
     <nav className="fixed top-0 w-full z-50 bg-white shadow-sm h-20 border-b border-gray-200">
-      <div className="flex justify-between items-center px-4 md:px-8 h-full max-w-screen-2xl mx-auto">
+      <div className="flex justify-between items-center px-4 md:px-8 h-full max-w-7xl mx-auto w-full">
         {/* Logo */}
         <div className="flex items-center gap-2">
           <span className="text-lg md:text-xl font-bold tracking-tighter text-primary uppercase font-headline">

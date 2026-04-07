@@ -12,7 +12,7 @@ export function HomeHeroSection() {
       </div>
 
       {/* Content */}
-      <div className="container mx-auto px-4 md:px-8 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 md:px-8 relative z-10 w-full">
         <div className="max-w-2xl bg-white/10 backdrop-blur-md p-6 md:p-8 rounded-lg border border-white/20">
           {/* Label */}
           <span className="inline-block py-1 px-4 mb-6 bg-primary text-white text-xs font-bold tracking-widest uppercase rounded-full">
